@@ -1,6 +1,5 @@
 classdef ztl
     %ZTL Zxs useful TooLs
-    %   2018-12-18
     
     properties
         % NOTHING
@@ -130,7 +129,8 @@ classdef ztl
             % also remember to set the [format of the numbers] and the [fps] below
             % It is possible to change the format of the movie, see http://blog.sciencenet.cn/blog-2824237-991962.html
             
-            fps = length(list_num)/60 ;       % set the fps, so that the movie lasts for 60 s
+            fps = max(3, length(list_num)/60 ) ;       % set the fps, so that the movie lasts for 60 s
+            fprintf('fps=%f \n',fps)
             
             str_first = num2str( list_num(1) );
             str_step = num2str( list_num(2)-list_num(1) );
