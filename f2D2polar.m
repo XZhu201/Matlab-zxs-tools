@@ -1,6 +1,6 @@
-function [vec_theta, output ] = TwoD2polar( Lx, Ly, Rx, Ry, D, Ntheta )
+function [vec_theta, output ] = f2D2polar( Lx, Ly, Rx, Ry, D, Ntheta )
 
-% TwoD2polar Convert the 2D distrbution in x-y coordingate into polar
+% f2D2polar Convert the 2D distrbution in x-y coordingate into polar
 % Ntheta determins how many points are obtained in the range [-pi, pi).
 % NOTE THAT either -pi or pi is not included.
 % e.g. pi is exluded here.
