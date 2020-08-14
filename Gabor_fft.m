@@ -41,7 +41,7 @@ set(gcf,'Color','w');
 set(gca,'YDir','normal'); % ����y�ᷴת
 xlabel('t/T_0'); ylabel('Harmonic Order');
 colorbar; colormap(jet);
-saveas(gcf,['Gabor_',str],'jpg');
+saveas(gcf,['Gabor_',str],'png');
 
 % ����ΪeV
 % figure;
