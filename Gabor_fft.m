@@ -2,6 +2,9 @@
 %Ҫ����ı���Ϊw0,dt,Acc,г���׶�N1,N2
 
 function Gabor_fft(w0,w0_factor,dt,dw,Acc,N1,N2,str)
+
+mkdir svFigs
+
 time_start = tic;
 sima=1/(w0_factor*w0);
 T0=2*pi/w0;
@@ -41,7 +44,7 @@ set(gcf,'Color','w');
 set(gca,'YDir','normal'); % ����y�ᷴת
 xlabel('t/T_0'); ylabel('Harmonic Order');
 colorbar; colormap(jet);
-saveas(gcf,['Gabor_',str],'png');
+saveas(gcf,['./svFigs/Gabor_',str],'png');
 
 % ����ΪeV
 % figure;
